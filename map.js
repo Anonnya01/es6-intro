@@ -38,7 +38,7 @@
 
 
 // -----filter------//
-// const numbers = [1, 5, 66, 10, 45, 12, 7]
+const numbers = [1, 5, 66, 10, 45, 12, 7]
 
 // const bigger = numbers.filter(x => x >= 10)
 // const even = numbers.filter(y => y % 2 ===0)
@@ -50,25 +50,36 @@
 // const firstEven = numbers.find(z => z % 2 === 0)
 // console.log(firstEven);
 
+// ------reduce--//
+
+// let sum =0
+// for(let num of numbers){
+//     sum =sum + num
+// }
+
+const total =numbers.reduce((acc,curr) => acc + curr ,0)
+console.log(total);
+
+
 // ------combined 3---------//
 
 
-const students = [
-    { id: 1, name: 'abul', marks: 50 },
-    { id: 2, name: 'Najmul', marks: 85 },
-    { id: 3, name: 'kabul', marks: 95 },
-    { id: 4, name: 'habul', marks: 15 },
-]
+// const students = [
+//     { id: 1, name: 'abul', marks: 50 },
+//     { id: 2, name: 'Najmul', marks: 85 },
+//     { id: 3, name: 'kabul', marks: 95 },
+//     { id: 4, name: 'habul', marks: 15 },
+// ]
 
 
-const names = students.map(student => student.name)
-const marks = students.map(student => student.marks + 2)
-const highMarks = students.filter(student => student.marks >= 80)
-const highMarks1 = students.find(student => student.marks >= 80)
+// const names = students.map(student => student.name)
+// const marks = students.map(student => student.marks + 2)
+// const highMarks = students.filter(student => student.marks >= 80)
+// const highMarks1 = students.find(student => student.marks >= 80)
 // console.log(names);
 // console.log(marks);
-console.log(highMarks);
-console.log(highMarks1);
+// console.log(highMarks);
+// console.log(highMarks1);
 
 
 
